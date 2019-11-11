@@ -1,0 +1,2 @@
+C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\GroupeProjects\ForTesting\bin\Debug\ForTesting.exe.config
+C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\GroupeProjects\Algorithm-Analysis-Group-Project\ForTesting\bin\Debug\ForTesting.exe.config
