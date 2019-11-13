@@ -30,13 +30,6 @@ namespace ProjectLibrary
             this.y = y;
         }
 
-        /// <summary>
-        /// Set edges leading away from this node
-        /// </summary>
-        /// <param name="edges"></param>
-        public void setEdges(Edge[] edges) {
-            this.edges = edges;
-        }
     }
 
 
