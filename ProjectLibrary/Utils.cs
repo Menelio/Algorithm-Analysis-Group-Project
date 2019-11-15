@@ -20,9 +20,9 @@ namespace ProjectLibrary
             var rowLength = array.GetLength(1);
             var rowVector = new T[rowLength];
 
-            for (var i = 0; i < rowLength; i++)
+            for (var i = 0; i < rowLength; i++) { 
                 rowVector[i] = array[row, i];
-
+            }
             return rowVector;
         }
     }

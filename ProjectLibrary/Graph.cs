@@ -33,7 +33,7 @@ namespace ProjectLibrary
             //set edges of nodes in nodes Array
             for (int i = 0; i < edgesArray.GetLength(0); i++) {
                 temp = new Edge[findNumOfEdges(Utils.GetRow(edgesArray, i))];
-                for (int j = 0; j < Utils.GetRow(edgesArray, i).Length; i++) {
+                for (int j = 0; j < Utils.GetRow(edgesArray, i).Length; j++) {
                     if (Utils.GetRow(edgesArray, i)[j] > 0) {
                         temp[i] = new Edge(Utils.GetRow(edgesArray, i)[j], nodesArray[j]);
                     }
@@ -59,6 +59,17 @@ namespace ProjectLibrary
             }
 
             return count;
+        }
+        /// <summary>
+        /// Set the h(n) of all nodes in the graph
+        /// </summary>
+        /// <param name="goal">goal node to find the distance from of every node</param>
+        public void setHnOfNodes(Node goal) {
+            for (int i = 0; i < nodes.Length; i++) {
+                nodes[i].hn = Math.Sqrt(Math.Pow( (nodes[i].x -goal.x) , 2) + Math.Pow( (nodes[i].y - goal.y), 2) );
+
+                Console.WriteLine(i + " x= " + (nodes[i].x - goal.x) + " ,y= " + (nodes[i].y - goal.y));
+            }
         }
 
     }

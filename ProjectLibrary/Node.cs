@@ -9,8 +9,9 @@ namespace ProjectLibrary
     public class Node
     {
         //Global vars
-        public double hn { get; set; }
+        public double hn { get; set; }//distance from goal
         public Edge[] edges { get; set; }
+        public String name { get; set; }
 
 
         //x and y coordinates
@@ -23,11 +24,13 @@ namespace ProjectLibrary
         /// <param name="hn">distance to goal</param>
         /// <param name="x">x coorrdinates</param>
         /// <param name="y">y coorrdinates</param>
-        public Node(double hn, double x, double y )
+        /// <param name="name">Name of node for identification</param>
+        public Node(double hn, double x, double y, string name )
         {
             this.hn = hn;
             this.x = x;
             this.y = y;
+            this.name = name;
         }
 
     }

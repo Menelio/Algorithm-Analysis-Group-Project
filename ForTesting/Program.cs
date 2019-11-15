@@ -10,30 +10,25 @@ namespace ForTesting
     {
         static void Main(string[] args)
         {
-            int[,] a = new int[,] { { 1,2},
-                                    { 3,4 },
-                                    { 5,6 }};
+            double[,] a = new double[,] { { -1,2,4},
+                                          { 3,4,3 },
+                                          { 5,6,1 }};
 
+            Node[] nodes = new Node[3];
 
-            int[] b = GetRow(a, 2);
+           
+            nodes[0] = new Node(0.0, 1.0, 1.0, "a");
+            nodes[1] = new Node(0.0, 4.0, 1.0, "b");
+            nodes[2] = new Node(0.0, 4.0, 5.0, "b");
 
-            Console.WriteLine(a.GetLength(0));
+            Graph g = new Graph(a, nodes);
 
-            //Console.WriteLine(b[0]);
-           // Console.WriteLine(b[1]);
-            //just to puase cuz im lazy
+            g.setHnOfNodes(nodes[2]);
+
+            Console.WriteLine(g.nodes[0].hn);
+
             Console.ReadKey();
         }
 
-        public static T[] GetRow<T>( T[,] matrix, int row)
-        {
-            var rowLength = matrix.GetLength(1);
-            var rowVector = new T[rowLength];
-
-            for (var i = 0; i < rowLength; i++)
-                rowVector[i] = matrix[row, i];
-
-            return rowVector;
-        }
     }
 }
