@@ -7,7 +7,15 @@ using System.Threading.Tasks;
 namespace ProjectLibrary
 {
     public class Astar
-    {
+    {        /// <summary>
+             /// Astar Search recursive method
+             /// </summary>
+             /// <param name="start">Starting node</param>
+             /// <param name="goal">Goal node</param>
+             /// <param name="route">Route of nodes through the graph should start with starting node</param>
+             /// <returns></returns>
+
+        
         /// <summary>
         /// Astar Search recursive method
         /// </summary>
@@ -25,13 +33,19 @@ namespace ProjectLibrary
                     routePlusOne[i] = route[i];
                 }
                 routePlusOne[route.Length] = goal;
-
-                return route;
+                return routePlusOne;
             }
             else { //else make recusive call
+                //make space in route and add current
+                Node[] routePlusOne = new Node[route.Length + 1];
+                for (int i = 0; i < route.Length; i++)
+                {
+                    routePlusOne[i] = route[i];
+                }
+                routePlusOne[route.Length] = start;
                 //set first edge->node as cheapest
-                Node cheapest = start;
-                double fn = start.hn + start.edges[0].gn;
+                Node cheapest = start.edges[0].node;
+                double fn = start.edges[0].node.hn + start.edges[0].gn;
                 //find new lowest fn
                 for (int i = 0; i < start.edges.Length; i++)
                 {
@@ -40,20 +54,14 @@ namespace ProjectLibrary
                        cheapest = start.edges[i].node;
                     }
                 }
-
-                //make space in route and add cheapest node
-                Node[] routePlusOne = new Node[route.Length + 1];
-                for (int i = 0; i < route.Length; i++)
-                {
-                    routePlusOne[i] = route[i];
-                }
-                routePlusOne[route.Length] = cheapest;
-
                 //recursive call
-                search(cheapest, goal, routePlusOne);
+                return search(cheapest, goal, routePlusOne);
             }
- 
-            return null;
+
         }
+
     }
 }
+
+
+

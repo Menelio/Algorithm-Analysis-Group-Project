@@ -33,14 +33,15 @@ namespace ProjectLibrary
             //set edges of nodes in nodes Array
             for (int i = 0; i < edgesArray.GetLength(0); i++) {
                 temp = new Edge[findNumOfEdges(Utils.GetRow(edgesArray, i))];
-                for (int j = 0; j < Utils.GetRow(edgesArray, i).Length; j++) {
+                for (int j = 0, k=0; j < Utils.GetRow(edgesArray, i).Length; j++) {
                     if (Utils.GetRow(edgesArray, i)[j] > 0) {
-                        temp[i] = new Edge(Utils.GetRow(edgesArray, i)[j], nodesArray[j]);
+                        
+                        temp[k] = new Edge(Utils.GetRow(edgesArray, i)[j], nodesArray[j]);
+                        k++;
                     }
                 }
                 nodesArray[i].edges = temp; 
             }
-
             //set nodes to nodesArray
             this.nodes = nodesArray;
         }
@@ -66,9 +67,11 @@ namespace ProjectLibrary
         /// <param name="goal">goal node to find the distance from of every node</param>
         public void setHnOfNodes(Node goal) {
             for (int i = 0; i < nodes.Length; i++) {
-                nodes[i].hn = Math.Sqrt(Math.Pow( (nodes[i].x -goal.x) , 2) + Math.Pow( (nodes[i].y - goal.y), 2) );
-
-                Console.WriteLine(i + " x= " + (nodes[i].x - goal.x) + " ,y= " + (nodes[i].y - goal.y));
+                nodes[i].hn = 
+                Math.Round(
+                    Math.Sqrt(
+                        Math.Pow( (nodes[i].x -goal.x) , 2) + Math.Pow( (nodes[i].y - goal.y), 2) 
+                 ),2);
             }
         }
 
