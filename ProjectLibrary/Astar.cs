@@ -7,52 +7,75 @@ using System.Threading.Tasks;
 namespace ProjectLibrary
 {
     public class Astar
-    { 
+    {
         /// <summary>
-        /// Astar Search recursive method
+        /// Overloaded Wrapper method for Astar.search.
+        /// Both start and goal have to be nodes in graph
         /// </summary>
         /// <param name="start">Starting node</param>
         /// <param name="goal">Goal node</param>
-        /// <param name="route">Route of nodes through the graph should start with starting node</param>
-        /// <returns></returns>
-        public static Node[] search(Node start, Node goal, Node[] route) {
-          
-            // test for base case / stop condition
-            if (start.Equals(goal)){
-                //make space in route and add cheapest node
-                Node[] routePlusOne = new Node[route.Length + 1];
-                for (int i = 0; i < route.Length; i++)
+        /// <param name="graph">Graph</param>
+        /// <returns>Shortest route threw graph</returns>
+        public static Route Search(Node start, Node goal, Graph graph) {
+            try
+            {
+                if (!Utils.NoRepeateNode(start, graph.nodes) && !Utils.NoRepeateNode(goal, graph.nodes))
                 {
-                    routePlusOne[i] = route[i];
+                    graph.setHnOfNodes(goal);
+                    Route startingRoute = new Route(start);
+                    Route[] openRoutes = new Route[0];
+                    return search(start, goal, startingRoute, openRoutes);
                 }
-                routePlusOne[route.Length] = goal;
-                return routePlusOne;
+                else
+                {
+                    throw new Exception();
+                }
             }
-            else { //else make recusive call
-                //make space in route and add current
-                Node[] routePlusOne = new Node[route.Length + 1];
-                for (int i = 0; i < route.Length; i++)
-                {
-                    routePlusOne[i] = route[i];
-                }
-                routePlusOne[route.Length] = start;
-                //set first edge->node as cheapest
-                Node cheapest = start.edges[0].node;
-                double fn = start.edges[0].node.hn + start.edges[0].gn;
-                //find new lowest fn
+            catch (System.Exception e) {
+                Console.WriteLine("Either goal or start were not in graph, in Search(Node start,"
+                        + "Node goal, Graph graph)\n Stack trace:"+ e.StackTrace);
+                return null;
+            } 
+        }
+        
+
+
+        //Method that preforms actual A* search 
+        private static Route search(Node start, Node goal, Route currRoute, Route[] open) {
+            if (start.name.Equals(goal.name))
+            {
+                return currRoute;
+            }
+            else
+            {
+                //create new routes from nodes connected to start node and add them to open
                 for (int i = 0; i < start.edges.Length; i++)
                 {
-                    if ((start.hn + start.edges[i].gn) < fn)
+                    open = Utils.AppentToArray(open,  //append to open
+                        new Route(                    //a new route 
+                        Utils.AppentToArray(          //made from
+                        currRoute.nodes, start.edges[i].node), //currRoute + start.edges[i].node
+                        currRoute.totalGn + start.edges[i].gn) //add edge's gn to totalGn
+                        );
+                }
+                
+                //select cheapst route to open Last node
+                int indexOfCheapest = 0;
+                Route cheapest = open[0];
+                for (int i = 0; i < open.Length; i++)
+                {
+                    if (open[i].fn < cheapest.fn)
                     {
-                       cheapest = start.edges[i].node;
+                        cheapest = open[i];
+                        indexOfCheapest = i;
                     }
                 }
-                //recursive call
-                return search(cheapest, goal, routePlusOne);
+                //close/remove cheapest route from open
+                open=Utils.RemoveAt(open, indexOfCheapest);
+                return search(cheapest.nodes[cheapest.nodes.Length - 1], goal, cheapest, open);
+
             }
-
-        }
-
+            }
     }
 }
 
