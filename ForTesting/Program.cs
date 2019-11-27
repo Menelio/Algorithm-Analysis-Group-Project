@@ -57,10 +57,19 @@ namespace ForTesting
             /////////////////////////////////////////////////////////////////////////////
 
 
-            Route r2 = Astar.Search(n1[0], n1[6], g1);
+            //Route r2 = Astar.Search(n1[0], n1[6], g1);
 
-            for (int i = 0; i < r2.nodes.Length; i++) {
-                Console.WriteLine(r2.nodes[i].name);
+            //for (int i = 0; i < r2.nodes.Length; i++) {
+            // Console.WriteLine(r2.nodes[i].name);
+            //}
+
+
+         
+            Route r = Exhaustive.Search(n1[0], n1[6], g1);
+            Console.WriteLine("--------------------------------------->OUT");
+            for (int k = 0; k < r.nodes.Length; k++)
+            {
+                Console.Write(r.nodes[k].name);
             }
 
             //PAUSE

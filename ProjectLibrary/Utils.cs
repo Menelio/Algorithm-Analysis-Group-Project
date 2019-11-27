@@ -87,5 +87,17 @@ namespace ProjectLibrary
 
             return dest;
         }
+        /// <summary>
+        /// Check if array of node contains a node with the given name
+        /// </summary>
+        /// <param name="nodes">Array of nodes</param>
+        /// <param name="name">name to look for</param>
+        /// <returns></returns>
+        public static Boolean ContainsName(Node[] nodes, String name) {
+            for (int i = 0; i < nodes.Length; i++) {
+                if (nodes[i].name.Equals(name)) return true;
+            }
+            return false;
+        }
     }
 }
