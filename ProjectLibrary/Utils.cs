@@ -99,5 +99,23 @@ namespace ProjectLibrary
             }
             return false;
         }
+        /// <summary>
+        /// Generates a random int within a certain range and with certain
+        /// numbers excluded.
+        /// </summary>
+        /// <param name="excluded">Array of ints to exclude</param>
+        /// <param name="lower">lower bound of range</param>
+        /// <param name="upper">upper bound of range</param>
+        /// <param rand="upper">random number gen object, need to be out side to stop 
+        /// random numbers from repeating</param>
+        /// <returns></returns>
+        public static int ExludedRandom(int[] excluded, int lower, int upper,Random rand ) {
+            var exclude = new HashSet<int>(excluded);
+            var range = Enumerable.Range(lower, upper).Where(i => !exclude.Contains(i));
+
+            int index = rand.Next(0, upper - exclude.Count);
+            return range.ElementAt(index);
+        }
+
     }
 }
