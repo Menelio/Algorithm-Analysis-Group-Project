@@ -1,0 +1,12 @@
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\obj\Debug\AStarSearchForm.csprojAssemblyReference.cache
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\obj\Debug\AStarSearchForm.AStarSearch.resources
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\obj\Debug\AStarSearchForm.Properties.Resources.resources
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\obj\Debug\AStarSearchForm.csproj.GenerateResource.cache
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\bin\Debug\AStarSearchForm.exe.config
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\bin\Debug\AStarSearchForm.exe
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\bin\Debug\AStarSearchForm.pdb
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\obj\Debug\AStarSearchForm.exe
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\obj\Debug\AStarSearchForm.pdb
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\bin\Debug\ProjectLibrary.dll
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\bin\Debug\ProjectLibrary.pdb
+C:\Users\skolw\source\repos\AStarSearchForm\AStarSearchForm\obj\Debug\AStarSearchForm.csproj.CopyComplete
