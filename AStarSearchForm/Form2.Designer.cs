@@ -734,6 +734,7 @@
             this.Controls.Add(this.pictureBox15);
             this.Name = "AStarSearch";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.AStarSearch_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

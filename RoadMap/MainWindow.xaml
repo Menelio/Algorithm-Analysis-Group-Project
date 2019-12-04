@@ -1,0 +1,115 @@
+﻿<Window x:Class="RoadMap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoadMap"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="866" Width="1379">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1336*"/>
+            <ColumnDefinition Width="35*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="RoadMapImage" HorizontalAlignment="Left" Height="853" VerticalAlignment="Top" Width="1372" Source="Assests/Roads.PNG" Grid.ColumnSpan="2" Margin="-1,0,0,-18"/>
+        <Ellipse x:Name="A" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="246,24,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="C" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="679,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="B" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="408,24,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="D" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="795,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="L" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="812,310,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="S" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="812,472,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="H" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="544,343,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="K" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="596,416,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="E" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="275,257,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="G" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="343,512,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="J" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="481,547,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="M" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="596,472,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="Q" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="1114,343,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="N" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="610,670,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="R" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="1018,772,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="P" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="935,372,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="I" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="731,295,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="O" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="874,453,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Ellipse x:Name="F" Fill="Red" HorizontalAlignment="Left" Height="24" Margin="423,134,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Panel.ZIndex="1"/>
+        <Line x:Name="EdgesAB" HorizontalAlignment="Left" Height="13" Margin="272,35,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="136" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="140" Y1="5" StrokeEndLineCap="Round" Y2="5"/>
+        <Line x:Name="EdgesBC" HorizontalAlignment="Left" Height="34" Margin="434,14,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="245" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="250" Y1="20" StrokeEndLineCap="Round" Y2="10"/>
+        <Line x:Name="EdgesCD" HorizontalAlignment="Left" Height="13" Margin="685,14,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="136" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="140" Y1="5" StrokeEndLineCap="Round" Y2="5"/>
+        <Line x:Name="EdgesDQ" HorizontalAlignment="Left" Height="354" Margin="812,14,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="319" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="319" Y1="10" StrokeEndLineCap="Round" Y2="344"/>
+        <Line x:Name="EdgesAE" HorizontalAlignment="Left" Height="233" Margin="246,35,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="55" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="40" Y1="5" StrokeEndLineCap="Round" Y2="233" X1="10"/>
+        <Line x:Name="EdgesGH" HorizontalAlignment="Left" Height="170" Margin="348,360,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="210" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="210" Y1="170" StrokeEndLineCap="Round" Y2="1"/>
+        <Line x:Name="EdgesCL" HorizontalAlignment="Left" Height="309" Margin="685,10,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="136" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="136" Y1="20" StrokeEndLineCap="Round" Y2="309" X1="10"/>
+        <Line x:Name="EdgesLO" HorizontalAlignment="Left" Height="157" Margin="821,310,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="65" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="65" Y1="20" StrokeEndLineCap="Round" Y2="157" X1="10"/>
+        <Line x:Name="EdgesHK" HorizontalAlignment="Left" Height="74" Margin="558,355,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="51" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="51" Y1="5" StrokeEndLineCap="Round" Y2="74"/>
+        <Line x:Name="EdgesIL" HorizontalAlignment="Left" Height="37" Margin="742,295,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="79" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="90" Y1="5" StrokeEndLineCap="Round" Y2="37"/>
+        <Line x:Name="EdgesHI" HorizontalAlignment="Left" Height="55" Margin="558,295,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="199" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="199" Y1="55" StrokeEndLineCap="Round" Y2="5" X1="5"/>
+        <Line x:Name="EdgesJN" HorizontalAlignment="Left" Height="123" Margin="492,560,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="130" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="130" StrokeEndLineCap="Round" Y2="130"/>
+        <Line x:Name="EdgesLP" HorizontalAlignment="Left" Height="63" Margin="826,318,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="121" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="121" Y1="5" StrokeEndLineCap="Round" Y2="63"/>
+        <Line x:Name="EdgesPQ" HorizontalAlignment="Left" Height="38" Margin="952,343,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="179" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="179" Y1="35" StrokeEndLineCap="Round" Y2="5"/>
+        <Line x:Name="EdgesAF" HorizontalAlignment="Left" Height="109" Margin="262,35,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="167" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="167" Y1="5" StrokeEndLineCap="Round" Y2="109" />
+        <Line x:Name="EdgesKM" HorizontalAlignment="Left" Height="53" Margin="596,429,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="26" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="12" Y1="5" StrokeEndLineCap="Round" Y2="50" X1="12"/>
+        <Line x:Name="EdgesGJ" HorizontalAlignment="Left" Height="48" Margin="350,512,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="142" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="142" Y1="5" StrokeEndLineCap="Round" Y2="48"/>
+        <Line x:Name="EdgesJM" HorizontalAlignment="Left" Height="78" Margin="492,482,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="117" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="117" Y1="78" StrokeEndLineCap="Round" Y2="5" X1="5"/>
+        <Line x:Name="EdgesMS" HorizontalAlignment="Left" Height="13" Margin="610,482,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="211" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="211" Y1="5" StrokeEndLineCap="Round" Y2="5"/>
+        <Line x:Name="EdgesSO" HorizontalAlignment="Left" Height="29" Margin="821,467,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="65" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="65" Y1="25" StrokeEndLineCap="Round"/>
+        <Line x:Name="EdgesEH" HorizontalAlignment="Left" Height="89" Margin="287,271,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="266" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="266" StrokeEndLineCap="Round" Y2="89"/>
+        <Line x:Name="EdgesEF" HorizontalAlignment="Left" Height="122" Margin="225,149,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="209" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="210" Y1="170" StrokeEndLineCap="Round" Y2="1"/>
+        <Line x:Name="EdgesPR" HorizontalAlignment="Left" Height="309" Margin="891,467,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="136" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="136" StrokeEndLineCap="Round" Y2="309"/>
+        <Line x:Name="EdgesFH" HorizontalAlignment="Left" Height="201" Margin="439,149,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="119" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="119" StrokeEndLineCap="Round" Y2="201"/>
+        <Line x:Name="EdgesEG" HorizontalAlignment="Left" Height="259" Margin="287,271,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="63" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="63" StrokeEndLineCap="Round" Y2="259"/>
+        <Line x:Name="EdgesNR" HorizontalAlignment="Left" Height="99" Margin="627,687,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="400" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="400" StrokeEndLineCap="Round" Y2="99"/>
+        <Line x:Name="EdgesOP" HorizontalAlignment="Left" Height="81" Margin="886,386,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="65" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="65" Y1="81" StrokeEndLineCap="Round"/>
+        <Line x:Name="EdgesRQ" HorizontalAlignment="Left" Height="431" Margin="1032,355,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="99" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="99" StrokeEndLineCap="Round" Y1="441"/>
+        <Line x:Name="EdgesBF" HorizontalAlignment="Left" Height="109" Margin="423,35,0,0" Stroke="CornflowerBlue" VerticalAlignment="Top" Width="11" StrokeThickness="5" IsEnabled="False" RenderTransformOrigin="0.908,1.704" X2="11" StrokeEndLineCap="Round" Y2="109" />
+        <Button x:Name="RBA" Content="Button" HorizontalAlignment="Left" Margin="225,28,0,0" VerticalAlignment="Top" Width="75" Click="AClick" Panel.ZIndex="2" Opacity="0" Height="20"/>
+        <Button x:Name="RBB" Content="" HorizontalAlignment="Left" Margin="408,24,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="BClick" Opacity="0"/>
+        <Button x:Name="RBC" Content="" HorizontalAlignment="Left" Margin="679,14,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="CClick" Opacity="0"/>
+        <Button x:Name="RBD" Content="" HorizontalAlignment="Left" Margin="795,14,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="DClick" Opacity="0"/>
+        <Button x:Name="RBE" Content="" HorizontalAlignment="Left" Margin="272,257,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="28" Height="20" Click="EClick" Opacity="0"/>
+        <Button x:Name="RBF" Content="" HorizontalAlignment="Left" Margin="423,134,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="FClick" Opacity="0"/>
+        <Button x:Name="RBG" Content="" HorizontalAlignment="Left" Margin="343,512,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="GClick" Opacity="0"/>
+        <Button x:Name="RBH" Content="" HorizontalAlignment="Left" Margin="544,343,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="HClick" Opacity="0"/>
+        <Button x:Name="RBI" Content="" HorizontalAlignment="Left" Margin="731,295,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="IClick" Opacity="0"/>
+        <Button x:Name="RBJ" Content="" HorizontalAlignment="Left" Margin="481,547,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="JClick" Opacity="0"/>
+        <Button x:Name="RBK" Content="" HorizontalAlignment="Left" Margin="587,416,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="35" Height="20" Click="KClick" Opacity="0"/>
+        <Button x:Name="RBL" Content="" HorizontalAlignment="Left" Margin="805,310,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="33" Height="20" Click="LClick" Opacity="0"/>
+        <Button x:Name="RBM" Content="" HorizontalAlignment="Left" Margin="587,475,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="35" Height="20" Click="MClick" Opacity="0"/>
+        <Button x:Name="RBS" Content="" HorizontalAlignment="Left" Margin="805,472,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="42" Height="20" Click="SClick" Opacity="0"/>
+        <Button x:Name="RBO" Content="" HorizontalAlignment="Left" Margin="870,453,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="35" Height="20" Click="OClick" Opacity="0"/>
+        <Button x:Name="RBP" Content="" HorizontalAlignment="Left" Margin="935,373,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="PClick" Opacity="0"/>
+        <Button x:Name="RBQ" Content="" HorizontalAlignment="Left" Margin="1114,343,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="QClick" Opacity="0"/>
+        <Button x:Name="RBN" Content="" HorizontalAlignment="Left" Margin="610,670,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="NClick" Opacity="0"/>
+        <Button x:Name="RBR" Content="" HorizontalAlignment="Left" Margin="1018,772,0,0" VerticalAlignment="Top" Panel.ZIndex="2" Width="26" Height="20" Click="RClick" Opacity="0"/>
+        <TextBox x:Name="textBoxAB" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="26" Margin="305,7,0,0"/>
+        <TextBox x:Name="textBoxBC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="26" Margin="566,0,0,0"/>
+        <TextBox x:Name="textBoxCD" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="26" Margin="754,25,0,0"/>
+        <TextBox x:Name="textBoxAE" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="26" Margin="275,130,0,0"/>
+        <TextBox x:Name="textBoxAF" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="26" Margin="350,67,0,0"/>
+        <TextBox x:Name="textBoxBF" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="26" Margin="439,67,0,0"/>
+        <TextBox x:Name="textBoxCL" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="26" Margin="719,149,0,0"/>
+        <TextBox x:Name="textBoxFH" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="26" Margin="492,211,0,0"/>
+        <TextBox x:Name="textBoxEH" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="26" Margin="403,282,0,0"/>
+        <TextBox x:Name="textBoxHI" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="26" Margin="621,296,0,0"/>
+        <TextBox x:Name="textBoxIL" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="26" Margin="774,290,0,0"/>
+        <TextBox x:Name="textBoxEG" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="26" Margin="324,382,0,0"/>
+        <TextBox x:Name="textBoxGH" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="26" Margin="466,444,0,0"/>
+        <TextBox x:Name="textBoxHK" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="26" Margin="587,373,0,0"/>
+        <TextBox x:Name="textBoxKM" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="26" Margin="621,445,0,0"/>
+        <TextBox x:Name="textBoxJM" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="26" Margin="566,522,0,0"/>
+        <TextBox x:Name="textBoxJN" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="26" Margin="558,596,0,0"/>
+        <TextBox x:Name="textBoxMS" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="26" Margin="705,458,0,0"/>
+        <TextBox x:Name="textBoxSO" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="26" Margin="832,449,0,0"/>
+        <TextBox x:Name="textBoxLO" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="26" Margin="826,386,0,0"/>
+        <TextBox x:Name="textBoxDQ" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="26" Margin="952,130,0,0"/>
+        <TextBox x:Name="textBoxLP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="26" Margin="879,320,0,0"/>
+        <TextBox x:Name="textBoxPQ" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="26" Margin="1006,336,0,0"/>
+        <TextBox x:Name="textBoxOP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="26" Margin="921,429,0,0"/>
+        <TextBox x:Name="textBoxOR" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="26" Margin="952,560,0,0"/>
+        <TextBox x:Name="textBoxNR" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="26" Margin="763,687,0,0"/>
+        <TextBox x:Name="textBoxRQ" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="26" Margin="1088,569,0,0"/>
+        <TextBox x:Name="textBoxGJ" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="26" Margin="408,544,0,0"/>
+        <TextBox x:Name="textBoxEF" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="26" Margin="372,211,0,0"/>
+        <Button x:Name="resetBtn" Content="Reset" HorizontalAlignment="Left" Margin="78,686,0,0" VerticalAlignment="Top" Width="111" Height="39" Click="ResetBtn"/>
+        <Button x:Name="searchBtn" Content="Search" HorizontalAlignment="Left" Margin="78,755,0,0" VerticalAlignment="Top" Width="111" Height="41" Click="aStarBtn"/>
+
+    </Grid>
+</Window>

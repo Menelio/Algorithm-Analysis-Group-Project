@@ -30,7 +30,7 @@ namespace Charts
 
             float[] AstarTime = new float[100];
             float[] ExhaustTime = new float[100];
-
+            
             for (int i = 1; i < 50; i++)
             {
                 int n = 10 * i;
@@ -40,27 +40,27 @@ namespace Charts
                 ///////////////////////////////////////////////////////////////////////////////////
                 Graph g = RandomGraph.Generate(n, x, y);
 
-                Stopwatch stopWatch1 = new Stopwatch();
-                stopWatch1.Start();
+                //Stopwatch stopWatch1 = new Stopwatch();
+                //stopWatch1.Start();
 
                 Route r1 = Astar.Search(g.nodes[0], g.nodes[g.nodes.Length - 1], g);
+                AstarTime[i] = GC.GetTotalMemory(true);
 
-
-                stopWatch1.Stop();
+                //stopWatch1.Stop();
 
                 ////////////////////////////////////////////////////////////////////////////////////
 
-                Stopwatch stopWatch2 = new Stopwatch();
-                stopWatch2.Start();
+                //Stopwatch stopWatch2 = new Stopwatch();
+                //stopWatch2.Start();
 
                 Route r2 = Exhaustive.Search(g.nodes[0], g.nodes[g.nodes.Length - 1], g);
-
-                stopWatch2.Stop();
+                ExhaustTime[i] = GC.GetTotalMemory(true);
+                //stopWatch2.Stop();
 
                 ///////////////////////////////////////////////////////////////////////////////////
 
-                AstarTime[i] = stopWatch1.ElapsedTicks;
-                ExhaustTime[i] = stopWatch2.ElapsedTicks;
+                //AstarTime[i] = stopWatch1.ElapsedTicks;
+                //ExhaustTime[i] = stopWatch2.ElapsedTicks;
             }
 
             double[] t = { 5000, 7000 };
@@ -75,9 +75,9 @@ namespace Charts
             chart.AxisX.Minimum = 0;
             chart.AxisX.Maximum = 500;
             chart.AxisY.Minimum = 0;
-            chart.AxisY.Maximum = 25000;
-            chart.AxisX.Interval = 10;
-            chart.AxisY.Interval = 1000;
+            chart.AxisY.Maximum = 500000;
+            chart.AxisX.Interval = 50;
+            chart.AxisY.Interval = 25000;
 
             chart1.Series.Add("Astar");
             chart1.Series["Astar"].ChartType = SeriesChartType.Line;
@@ -99,6 +99,11 @@ namespace Charts
         }
 
         private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

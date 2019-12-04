@@ -33,7 +33,7 @@ namespace ForTesting
                 stopWatch1.Start();
 
                 Route r1 = Astar.Search(g.nodes[0], g.nodes[g.nodes.Length - 1], g);
-                
+                long AstarMemory = GC.GetTotalMemory(true);
 
                 stopWatch1.Stop();
 
@@ -43,7 +43,7 @@ namespace ForTesting
                 stopWatch2.Start();
 
                 Route r2 = Exhaustive.Search(g.nodes[0], g.nodes[g.nodes.Length - 1], g);
-
+                long ExhaustMemory = GC.GetTotalMemory(true);
                 stopWatch2.Stop();
 
                 ///////////////////////////////////////////////////////////////////////////////////
@@ -51,6 +51,9 @@ namespace ForTesting
                 Console.WriteLine("--------------------------> "+i);
                 Console.WriteLine("A* RunTime = " + stopWatch1.ElapsedTicks);
                 Console.WriteLine("Ex RunTime = " + stopWatch2.ElapsedTicks);
+                Console.WriteLine(">>>>>>>>>>>>>");
+                Console.WriteLine("A* Mem = " + AstarMemory);
+                Console.WriteLine("Ex Mem = " + ExhaustMemory);
                 Console.WriteLine("--------------------------");
             }
             //PAUSE

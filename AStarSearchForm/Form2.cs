@@ -321,5 +321,10 @@ namespace AStarSearchForm
         {
 
         }
+
+        private void AStarSearch_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
