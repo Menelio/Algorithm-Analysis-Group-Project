@@ -75,9 +75,9 @@ namespace RoadMap
             //initialize edges            A                                      B  C  D                                      E                                      F  G  H  I  J  K  L  M  N  O  P  Q  R  S
             edges = new double[19, 19]{ {-1, Convert.ToDouble(this.textBoxAB.Text),-1,-1, Convert.ToDouble(this.textBoxAE.Text), Convert.ToDouble(this.textBoxAF.Text),-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},//A
                                       //                                   A   B                                      C  D  E                                      F  G  H  I  J  K  L  M  N  O  P  Q  R  S
-                                      { Convert.ToDouble(this.textBoxAB.Text),-1, Convert.ToDouble(this.textBoxBC.Text),-1,-1, Convert.ToDouble(this.textBoxBC.Text),-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},//B
-                                      //A  B                                      C                                      D  E  F  G  H  I  J  K                                      L  M  N  O  P  Q  R  S
-                                      {-1,-1, Convert.ToDouble(this.textBoxBC.Text), Convert.ToDouble(this.textBoxCD.Text),-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxCL.Text),-1,-1,-1,-1,-1,-1,-1},//C
+                                      { Convert.ToDouble(this.textBoxAB.Text),-1, Convert.ToDouble(this.textBoxBC.Text),-1,-1, Convert.ToDouble(this.textBoxBF.Text),-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},//B
+                                      //A                                      B  C                                      D  E  F  G  H  I  J  K                                      L  M  N  O  P  Q  R  S
+                                      {-1, Convert.ToDouble(this.textBoxBC.Text),-1, Convert.ToDouble(this.textBoxCD.Text),-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxCL.Text),-1,-1,-1,-1,-1,-1,-1},//C
                                       //A  B                                      C  D  E  F  G  H  I  J  K  L  M  N  O  P                                      Q  R  S
                                       {-1,-1, Convert.ToDouble(this.textBoxCD.Text),-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxDQ.Text),-1,-1},//D
                                       //                                    A  B  C  D  E                                      F                                      G                                      H  I  J  K  L  M  N  O  P  Q  R  S
@@ -86,16 +86,16 @@ namespace RoadMap
                                       { Convert.ToDouble(this.textBoxAF.Text), Convert.ToDouble(this.textBoxBF.Text),-1,-1, Convert.ToDouble(this.textBoxEF.Text),-1,-1, Convert.ToDouble(this.textBoxFH.Text),-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},//F
                                       //A  B  C  D                                      E  F  G                                      H  I                                      J  K  L  M  N  O  P  Q  R  S
                                       {-1,-1,-1,-1, Convert.ToDouble(this.textBoxEG.Text),-1,-1, Convert.ToDouble(this.textBoxGH.Text),-1, Convert.ToDouble(this.textBoxGJ.Text),-1,-1,-1,-1,-1,-1,-1,-1,-1},//G
-                                      //A  B  C  D                                      E                                      F                                      G  H  I  J                                      K  L  M  N  O  P  Q  R  S
-                                      {-1,-1,-1,-1, Convert.ToDouble(this.textBoxEH.Text), Convert.ToDouble(this.textBoxFH.Text), Convert.ToDouble(this.textBoxGH.Text),-1,-1,-1, Convert.ToDouble(this.textBoxHK.Text),-1,-1,-1,-1,-1,-1,-1,-1},//H
+                                      //A  B  C  D                                      E                                      F                                      G  H                                     I  J                                      K  L  M  N  O  P  Q  R  S
+                                      {-1,-1,-1,-1, Convert.ToDouble(this.textBoxEH.Text), Convert.ToDouble(this.textBoxFH.Text), Convert.ToDouble(this.textBoxGH.Text),-1,Convert.ToDouble(this.textBoxHI.Text),-1, Convert.ToDouble(this.textBoxHK.Text),-1,-1,-1,-1,-1,-1,-1,-1},//H
                                       //A  B  C  D  E  F  G                                      H  I  J  K                                      L  M  N  O  P  Q  R  S
                                       {-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxHI.Text),-1,-1,-1, Convert.ToDouble(this.textBoxIL.Text),-1,-1,-1,-1,-1,-1,-1},//I
                                       //A  B  C  D  E  F                                      G  H  I  J  K  L                                      M  N  O  P  Q  R  S
                                       {-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxGJ.Text),-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxJM.Text),-1,-1,-1,-1,-1,-1},//J
                                       //A  B  C  D  E  F  G                                      H  I  J  K  L                                      M  N  O  P  Q  R  S
                                       {-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxHK.Text),-1,-1,-1,-1, Convert.ToDouble(this.textBoxKM.Text),-1,-1,-1,-1,-1,-1},//K
-                                      //A  B  C  D  E  F  G  H                                      I  J  K  L  M  N                                      O                                      P  Q  R  S
-                                      {-1,-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxIL.Text),-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxLO.Text), Convert.ToDouble(this.textBoxLP.Text),-1,-1,-1},//L
+                                      //A  B                                     C  D  E  F  G  H                                      I  J  K  L  M  N                                      O                                      P  Q  R  S
+                                      {-1,-1,Convert.ToDouble(this.textBoxCL.Text),-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxIL.Text),-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxLO.Text), Convert.ToDouble(this.textBoxLP.Text),-1,-1,-1},//L
                                       //A  B  C  D  E  F  G  H  I                                      J                                      K  L  M  N  O  P  Q  R                                      S
                                       {-1,-1,-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxJM.Text), Convert.ToDouble(this.textBoxKM.Text),-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxMS.Text)},//M
                                       //A  B  C  D  E  F  G  H  I                                      J  K  L  M  N  O  P  Q                                      R  S
