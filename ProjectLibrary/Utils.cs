@@ -112,7 +112,6 @@ namespace ProjectLibrary
         public static int ExludedRandom(int[] excluded, int lower, int upper,Random rand ) {
             var exclude = new HashSet<int>(excluded);
             var range = Enumerable.Range(lower, upper).Where(i => !exclude.Contains(i));
-
             int index = rand.Next(0, upper - exclude.Count);
             return range.ElementAt(index);
         }

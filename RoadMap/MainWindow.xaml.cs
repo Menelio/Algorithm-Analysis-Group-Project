@@ -90,8 +90,8 @@ namespace RoadMap
                                       {-1,-1,-1,-1, Convert.ToDouble(this.textBoxEH.Text), Convert.ToDouble(this.textBoxFH.Text), Convert.ToDouble(this.textBoxGH.Text),-1,Convert.ToDouble(this.textBoxHI.Text),-1, Convert.ToDouble(this.textBoxHK.Text),-1,-1,-1,-1,-1,-1,-1,-1},//H
                                       //A  B  C  D  E  F  G                                      H  I  J  K                                      L  M  N  O  P  Q  R  S
                                       {-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxHI.Text),-1,-1,-1, Convert.ToDouble(this.textBoxIL.Text),-1,-1,-1,-1,-1,-1,-1},//I
-                                      //A  B  C  D  E  F                                      G  H  I  J  K  L                                      M  N  O  P  Q  R  S
-                                      {-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxGJ.Text),-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxJM.Text),-1,-1,-1,-1,-1,-1},//J
+                                      //A  B  C  D  E  F                                      G  H  I  J  K  L                                      M                                     N  O  P  Q  R  S
+                                      {-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxGJ.Text),-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxJM.Text),Convert.ToDouble(this.textBoxJM.Text),-1,-1,-1,-1,-1},//J
                                       //A  B  C  D  E  F  G                                      H  I  J  K  L                                      M  N  O  P  Q  R  S
                                       {-1,-1,-1,-1,-1,-1,-1, Convert.ToDouble(this.textBoxHK.Text),-1,-1,-1,-1, Convert.ToDouble(this.textBoxKM.Text),-1,-1,-1,-1,-1,-1},//K
                                       //A  B                                     C  D  E  F  G  H                                      I  J  K  L  M  N                                      O                                      P  Q  R  S
