@@ -12,3 +12,15 @@ C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\GroupeProjec
 C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\BackUP\Charts\bin\Debug\Charts.exe.config
 C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\BackUP\Charts\obj\Debug\Charts.exe
 C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\BackUP\Charts\obj\Debug\Charts.pdb
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\bin\Debug\Charts.exe.config
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\bin\Debug\Charts.exe
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\bin\Debug\Charts.pdb
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\bin\Debug\ProjectLibrary.dll
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\bin\Debug\ProjectLibrary.pdb
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\obj\Debug\Charts.csprojAssemblyReference.cache
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\obj\Debug\Charts.Form1.resources
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\obj\Debug\Charts.Properties.Resources.resources
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\obj\Debug\Charts.csproj.GenerateResource.cache
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\obj\Debug\Charts.csproj.CopyComplete
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\obj\Debug\Charts.exe
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\Charts\obj\Debug\Charts.pdb

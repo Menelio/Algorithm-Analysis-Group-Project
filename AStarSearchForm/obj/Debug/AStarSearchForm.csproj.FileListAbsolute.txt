@@ -24,3 +24,15 @@ C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\GroupeProjec
 C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\GroupeProjects\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.AStarSearch.resources
 C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\GroupeProjects\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.Properties.Resources.resources
 C:\Users\Manny\Desktop\KSU\2019_Algorithym\GroupProject\C#WorkSpace\GroupeProjects\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.csproj.GenerateResource.Cache
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\bin\Debug\AStarSearchForm.exe.config
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\bin\Debug\AStarSearchForm.exe
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\bin\Debug\AStarSearchForm.pdb
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\bin\Debug\ProjectLibrary.dll
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\bin\Debug\ProjectLibrary.pdb
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.csprojAssemblyReference.cache
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.AStarSearch.resources
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.Properties.Resources.resources
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.csproj.GenerateResource.cache
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.csproj.CopyComplete
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.exe
+C:\Users\skolw\Source\Repos\Algorithm-Analysis-Group-Project\AStarSearchForm\obj\Debug\AStarSearchForm.pdb
