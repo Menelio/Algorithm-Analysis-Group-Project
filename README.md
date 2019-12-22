@@ -9,7 +9,7 @@ CS4306/01 – Algorithm Analysis Fall 2019 Group Project. Menelio Alvarez, Kryst
   # Space Efficency Messured in Bytes
   ![alt text](https://github.com/Menelio/Algorithm-Analysis-Group-Project/blob/master/RoadMap/Assests/SpaceEficiencyGraph.png?raw=true)
   
-The code in this repository showcase a demo of our A* search Algorithm finding the shortest routes between node on the following road map:
+The code in this repository showcase a demo of our A* search Algorithm finding the shortest routes between nodes on the following road map:
   # KSU Marrietta Campus
   ![alt text](https://github.com/Menelio/Algorithm-Analysis-Group-Project/blob/master/RoadMap/Assests/Roads.PNG?raw=true)
 
